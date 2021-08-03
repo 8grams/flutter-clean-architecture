@@ -4,7 +4,6 @@ import 'package:egrams_flutter/app/infrastructures/app_component.dart';
 import 'package:egrams_flutter/app/ui/pages/users/controller.dart';
 
 class UsersPage extends View {
-  UsersPage({Key key}) : super(key: key);
   @override
   _UsersPageState createState() => new _UsersPageState(AppComponent.getInjector().get<UsersController>());
 }

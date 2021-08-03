@@ -5,7 +5,6 @@ import 'package:egrams_flutter/app/ui/pages/home/controller.dart';
 import 'package:egrams_flutter/app/ui/res/generated/i18n.dart';
 
 class HomePage extends View {
-  HomePage({Key key}) : super(key: key);
   @override
   _HomePageState createState() => new _HomePageState(AppComponent.getInjector().get<HomeController>());
 }

@@ -4,13 +4,13 @@ import 'package:egrams_flutter/app/ui/pages/pages.dart';
 import 'package:egrams_flutter/app/ui/pages/users/view.dart';
 
 class Router {
-  RouteObserver<PageRoute> routeObserver;
+  RouteObserver<PageRoute>? routeObserver;
 
   Router() {
     routeObserver = RouteObserver<PageRoute>();
   }
 
-  Route<dynamic> getRoute(RouteSettings settings) {
+  Route<dynamic>? getRoute(RouteSettings settings) {
     switch (settings.name) {
       case Pages.home:
         return _buildRoute(settings, HomePage());

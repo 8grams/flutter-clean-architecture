@@ -5,9 +5,9 @@ import 'package:egrams_flutter/use_cases/user/get_users.dart';
 class UsersPresenter extends Presenter {
   GetUsersUseCase _useCase;
 
-  Function getUsersOnNext;
-  Function getUsersOnComplete;
-  Function getUsersOnError;
+  late Function getUsersOnNext;
+  late Function getUsersOnComplete;
+  late Function getUsersOnError;
 
   UsersPresenter(this._useCase);
 
@@ -26,7 +26,7 @@ class _GetUsersObserver implements Observer<List<User>> {
 
   _GetUsersObserver(this._presenter);
 
-  void onNext(List<User> users) {
+  void onNext(List<User>? users) {
     _presenter.getUsersOnNext(users);
   }
 

@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       title: "Flutter Clean Architecture",
       home: HomePage(),
       onGenerateRoute: _router.getRoute,
-      navigatorObservers: [_router.routeObserver],
+      navigatorObservers: [_router.routeObserver!],
     );
   }
 }

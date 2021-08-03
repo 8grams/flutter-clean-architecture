@@ -12,7 +12,7 @@ import 'package:egrams_flutter/app/infrastructures/persistences/api_service.dart
 class RootModule {
   static Future<void> init(Injector injector) async {
     await dotenv.load(fileName: ".env");
-    injector.registerSingleton<Endpoints>(() => Endpoints(dotenv.env['BASE_URL']));
+    injector.registerSingleton<Endpoints>(() => Endpoints(dotenv.env['BASE_URL']!));
 
     injector.registerDependency<Dio>(() {
       var dio = Dio();

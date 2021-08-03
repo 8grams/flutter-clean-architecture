@@ -4,8 +4,8 @@ import 'package:egrams_flutter/domains/entities/user.dart';
 
 class UsersController extends Controller {
   UsersPresenter _presenter;
-  List<User> _users;
 
+  List<User> _users = [];
   List<User> get users => _users;
 
   UsersController(this._presenter) : super() {

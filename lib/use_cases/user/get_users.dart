@@ -11,10 +11,10 @@ class GetUsersUseCase extends UseCase<List<User>, Map<String, String>> {
   GetUsersUseCase(this._repository);
 
   @override
-  Future<Stream<List<User>>> buildUseCaseStream(Map<String, String> params) async {
+  Future<Stream<List<User>?>> buildUseCaseStream(Map<String, String>? params) async {
     final StreamController<List<User>> _controller = StreamController();
     try {
-      List<User> users = await _repository.getAll(params);
+      List<User> users = await _repository.getAll(params!);
       _controller.add(users);
       _controller.close();
     } catch (e) {

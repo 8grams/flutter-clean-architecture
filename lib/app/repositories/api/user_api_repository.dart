@@ -5,9 +5,9 @@ import 'package:egrams_flutter/data/persistences/repositories/contracts/user_rep
 import 'package:egrams_flutter/domains/entities/user.dart';
 
 class UserApiRepository implements UserRepository {
-  ApiServiceInterface _service;
-  Endpoints _endpoints;
-  UserMapper _mapper;
+  late ApiServiceInterface _service;
+  late Endpoints _endpoints;
+  late UserMapper _mapper;
 
   UserApiRepository(ApiServiceInterface service, Endpoints endpoints, UserMapper mapper) {
     this._service = service;

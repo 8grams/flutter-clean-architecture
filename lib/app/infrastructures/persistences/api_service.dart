@@ -7,16 +7,14 @@ import 'package:egrams_flutter/data/infrastructures/api_service_interface.dart';
 class ApiService extends ApiServiceInterface {
   Dio _dio;
 
-  ApiService(Dio dio) {
-    _dio = dio;
-  }
+  ApiService(this._dio);
 
   // send http request
   Future<Map<String, dynamic>> invokeHttp(dynamic url, RequestType type,
-      {Map<String, String> headers,
+      {Map<String, String>? headers,
       dynamic body,
-      Map<String, String> params,
-      Encoding encoding,
+      Map<String, String>? params,
+      Encoding? encoding,
       bool needThrowError = true}) async {
     Response response;
     try {
@@ -30,7 +28,7 @@ class ApiService extends ApiServiceInterface {
 
   // setup requiest type and configuration
   Future<Response> _invoke(dynamic url, RequestType type,
-      {Map<String, String> headers, dynamic body, Map<String, String> params}) async {
+      {Map<String, String>? headers, dynamic body, Map<String, String>? params}) async {
     Response response;
 
     try {

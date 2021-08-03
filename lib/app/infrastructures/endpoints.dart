@@ -1,5 +1,5 @@
 class Endpoints {
-  String baseUrl;
+  late String baseUrl;
 
   Endpoints(String baseUrl) {
     this.baseUrl = baseUrl;
