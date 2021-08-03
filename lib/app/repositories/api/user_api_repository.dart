@@ -1,8 +1,8 @@
-import 'package:refactory_flutter_test/app/infrastructures/endpoints.dart';
-import 'package:refactory_flutter_test/data/infrastructures/api_service_interface.dart';
-import 'package:refactory_flutter_test/data/persistences/mappers/user_mapper.dart';
-import 'package:refactory_flutter_test/data/persistences/repositories/contracts/user_repository.dart';
-import 'package:refactory_flutter_test/domains/entities/user.dart';
+import 'package:egrams_flutter/app/infrastructures/endpoints.dart';
+import 'package:egrams_flutter/data/infrastructures/api_service_interface.dart';
+import 'package:egrams_flutter/data/persistences/mappers/user_mapper.dart';
+import 'package:egrams_flutter/data/persistences/repositories/contracts/user_repository.dart';
+import 'package:egrams_flutter/domains/entities/user.dart';
 
 class UserApiRepository implements UserRepository {
   ApiServiceInterface _service;

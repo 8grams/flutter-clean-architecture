@@ -1,6 +1,6 @@
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
-import 'package:refactory_flutter_test/app/ui/pages/users/presenter.dart';
-import 'package:refactory_flutter_test/domains/entities/user.dart';
+import 'package:egrams_flutter/app/ui/pages/users/presenter.dart';
+import 'package:egrams_flutter/domains/entities/user.dart';
 
 class UsersController extends Controller {
   UsersPresenter _presenter;

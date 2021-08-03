@@ -1,4 +1,4 @@
-import 'package:refactory_flutter_test/domains/entities/user.dart';
+import 'package:egrams_flutter/domains/entities/user.dart';
 
 class UserMapper {
   List<User> getUsersConverter(Map<String, dynamic> response) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:refactory_flutter_test/app/ui/pages/home/view.dart';
-import 'package:refactory_flutter_test/app/ui/pages/pages.dart';
-import 'package:refactory_flutter_test/app/ui/pages/users/view.dart';
+import 'package:egrams_flutter/app/ui/pages/home/view.dart';
+import 'package:egrams_flutter/app/ui/pages/pages.dart';
+import 'package:egrams_flutter/app/ui/pages/users/view.dart';
 
 class Router {
   RouteObserver<PageRoute> routeObserver;

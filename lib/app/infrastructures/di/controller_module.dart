@@ -1,7 +1,7 @@
 import 'package:injector/injector.dart';
-import 'package:refactory_flutter_test/app/ui/pages/home/controller.dart';
-import 'package:refactory_flutter_test/app/ui/pages/users/controller.dart';
-import 'package:refactory_flutter_test/app/ui/pages/users/presenter.dart';
+import 'package:egrams_flutter/app/ui/pages/home/controller.dart';
+import 'package:egrams_flutter/app/ui/pages/users/controller.dart';
+import 'package:egrams_flutter/app/ui/pages/users/presenter.dart';
 
 class ControllerModule {
   static void init(Injector injector) {

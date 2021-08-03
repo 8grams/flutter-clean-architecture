@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
-import 'package:refactory_flutter_test/app/infrastructures/app_component.dart';
-import 'package:refactory_flutter_test/app/ui/pages/home/controller.dart';
-import 'package:refactory_flutter_test/app/ui/res/generated/i18n.dart';
+import 'package:egrams_flutter/app/infrastructures/app_component.dart';
+import 'package:egrams_flutter/app/ui/pages/home/controller.dart';
+import 'package:egrams_flutter/app/ui/res/generated/i18n.dart';
 
 class HomePage extends View {
   HomePage({Key key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
-import 'package:refactory_flutter_test/domains/entities/user.dart';
-import 'package:refactory_flutter_test/use_cases/user/get_users.dart';
+import 'package:egrams_flutter/domains/entities/user.dart';
+import 'package:egrams_flutter/use_cases/user/get_users.dart';
 
 class UsersPresenter extends Presenter {
   GetUsersUseCase _useCase;

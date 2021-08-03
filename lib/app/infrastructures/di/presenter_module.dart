@@ -1,6 +1,6 @@
 import 'package:injector/injector.dart';
-import 'package:refactory_flutter_test/app/ui/pages/users/presenter.dart';
-import 'package:refactory_flutter_test/use_cases/user/get_users.dart';
+import 'package:egrams_flutter/app/ui/pages/users/presenter.dart';
+import 'package:egrams_flutter/use_cases/user/get_users.dart';
 
 class PresenterModule {
   static void init(Injector injector) {

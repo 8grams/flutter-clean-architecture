@@ -8,13 +8,12 @@ import 'package:flutter/material.dart';
 import 'messages_all.dart';
 
 class S {
- 
   static const GeneratedLocalizationsDelegate delegate = GeneratedLocalizationsDelegate();
 
   static S of(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
-  
+
   static Future<S> load(Locale locale) {
     final String name = locale.countryCode == null ? locale.languageCode : locale.toString();
 
@@ -25,16 +24,14 @@ class S {
       return new S();
     });
   }
-  
+
   String get app_name {
-    return Intl.message("Refactory Flutter Test", name: 'app_name');
+    return Intl.message("Flutter Clean Architecture", name: 'app_name');
   }
 
   String get label_btn_to_users {
     return Intl.message("Go to users", name: 'label_btn_to_users');
   }
-
-
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
@@ -42,8 +39,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
 
   List<Locale> get supportedLocales {
     return const <Locale>[
-			Locale("en", ""),
-
+      Locale("en", ""),
     ];
   }
 
@@ -85,8 +81,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
   }
 
   @override
-  bool isSupported(Locale locale) =>
-    locale != null && supportedLocales.contains(locale);
+  bool isSupported(Locale locale) => locale != null && supportedLocales.contains(locale);
 
   @override
   bool shouldReload(GeneratedLocalizationsDelegate old) => false;

@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:async';
 
 import 'package:dio/dio.dart';
-import 'package:refactory_flutter_test/data/infrastructures/api_service_interface.dart';
+import 'package:egrams_flutter/data/infrastructures/api_service_interface.dart';
 
 class ApiService extends ApiServiceInterface {
   Dio _dio;
@@ -20,8 +20,7 @@ class ApiService extends ApiServiceInterface {
       bool needThrowError = true}) async {
     Response response;
     try {
-      response = await _invoke(url, type,
-          headers: headers, body: jsonEncode(body), params: params);
+      response = await _invoke(url, type, headers: headers, body: jsonEncode(body), params: params);
     } catch (error) {
       rethrow;
     }
@@ -31,9 +30,7 @@ class ApiService extends ApiServiceInterface {
 
   // setup requiest type and configuration
   Future<Response> _invoke(dynamic url, RequestType type,
-      {Map<String, String> headers,
-      dynamic body,
-      Map<String, String> params}) async {
+      {Map<String, String> headers, dynamic body, Map<String, String> params}) async {
     Response response;
 
     try {
@@ -52,12 +49,10 @@ class ApiService extends ApiServiceInterface {
               ));
           break;
         case RequestType.put:
-          response = await _dio.put(url,
-              data: body, options: Options(headers: headers));
+          response = await _dio.put(url, data: body, options: Options(headers: headers));
           break;
         case RequestType.patch:
-          response = await _dio.patch(url,
-              data: body, options: Options(headers: headers));
+          response = await _dio.patch(url, data: body, options: Options(headers: headers));
           break;
         case RequestType.delete:
           response = await _dio.delete(url, options: Options(headers: headers));

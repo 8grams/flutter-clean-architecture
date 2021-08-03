@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:refactory_flutter_test/app/infrastructures/app_component.dart';
-import 'package:refactory_flutter_test/app/infrastructures/router.dart' as AppRouter;
-import 'package:refactory_flutter_test/app/ui/pages/home/view.dart';
-import 'package:refactory_flutter_test/app/ui/res/generated/i18n.dart';
+import 'package:egrams_flutter/app/infrastructures/app_component.dart';
+import 'package:egrams_flutter/app/infrastructures/router.dart' as AppRouter;
+import 'package:egrams_flutter/app/ui/pages/home/view.dart';
+import 'package:egrams_flutter/app/ui/res/generated/i18n.dart';
 
 void main() {
   AppComponent.init();
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: [S.delegate, GlobalMaterialLocalizations.delegate, GlobalWidgetsLocalizations.delegate],
       supportedLocales: S.delegate.supportedLocales,
       locale: Locale('en'),
-      title: "Refactory Flutter Test",
+      title: "Flutter Clean Architecture",
       home: HomePage(),
       onGenerateRoute: _router.getRoute,
       navigatorObservers: [_router.routeObserver],
